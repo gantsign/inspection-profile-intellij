@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.github.gantsign.intellij.config</groupId>
+  <artifactId>inspection-profile</artifactId>
+  <version>1.0.0-SNAPSHOT</version>
+
+  <name>Inspection profile</name>
+  <description>GantSign Inspection profile for IntelliJ IDEA</description>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-archetype-plugin</artifactId>
+          <version>3.0.0</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-clean-plugin</artifactId>
+          <version>3.0.0</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <version>3.1</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-deploy-plugin</artifactId>
+          <version>2.8.2</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-install-plugin</artifactId>
+          <version>2.5.2</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-jar-plugin</artifactId>
+          <version>2.4</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-javadoc-plugin</artifactId>
+          <version>2.10.4</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-release-plugin</artifactId>
+          <version>2.5.3</version>
+          <configuration>
+            <tagNameFormat>@{project.version}</tagNameFormat>
+          </configuration>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-resources-plugin</artifactId>
+          <version>3.0.2</version>
+          <configuration>
+            <addDefaultExcludes>false</addDefaultExcludes>
+          </configuration>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-site-plugin</artifactId>
+          <version>3.6</version>
+          <configuration>
+            <skipDeploy>true</skipDeploy>
+          </configuration>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-source-plugin</artifactId>
+          <version>3.0.1</version>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-surefire-plugin</artifactId>
+          <version>2.12.4</version>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+
+    <plugins>
+      <plugin>
+        <groupId>com.github.ekryd.sortpom</groupId>
+        <artifactId>sortpom-maven-plugin</artifactId>
+        <version>2.8.0</version>
+        <configuration>
+          <predefinedSortOrder>custom_1</predefinedSortOrder>
+          <encoding>${project.build.sourceEncoding}</encoding>
+          <lineSeparator>\n</lineSeparator>
+          <keepBlankLines>true</keepBlankLines>
+          <nrOfIndentSpace>2</nrOfIndentSpace>
+          <sortProperties>true</sortProperties>
+          <sortDependencies>scope,groupId,artifactId</sortDependencies>
+          <sortPlugins>groupId,artifactId</sortPlugins>
+          <expandEmptyElements>false</expandEmptyElements>
+        </configuration>
+        <executions>
+          <execution>
+            <goals>
+              <goal>sort</goal>
+            </goals>
+            <phase>verify</phase>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+
+  <reporting>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-project-info-reports-plugin</artifactId>
+        <version>2.9</version>
+        <reportSets>
+          <reportSet>
+            <reports>
+              <report>cim</report>
+              <report>dependency-info</report>
+              <report>distribution-management</report>
+              <report>index</report>
+              <report>issue-tracking</report>
+              <report>license</report>
+              <report>plugin-management</report>
+              <report>plugins</report>
+              <report>project-team</report>
+              <report>scm</report>
+              <report>summary</report>
+            </reports>
+          </reportSet>
+        </reportSets>
+      </plugin>
+    </plugins>
+  </reporting>
+
+  <url>https://github.com/gantsign/inspection-profile-intellij</url>
+
+  <licenses>
+    <license>
+      <name>MIT</name>
+      <url>https://opensource.org/licenses/MIT</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+
+  <developers>
+    <developer>
+      <name>John Freeman</name>
+      <organization>GantSign Ltd.</organization>
+    </developer>
+  </developers>
+
+  <scm>
+    <connection>scm:git:https://github.com/gantsign/inspection-profile-intellij.git</connection>
+    <developerConnection>scm:git:git@github.com:gantsign/inspection-profile-intellij.git</developerConnection>
+    <url>https://github.com/gantsign/inspection-profile-intellij</url>
+    <tag>HEAD</tag>
+  </scm>
+
+  <issueManagement>
+    <system>GitHub</system>
+    <url>https://github.com/gantsign/inspection-profile-intellij/issues</url>
+  </issueManagement>
+
+  <ciManagement>
+    <system>Travis CI</system>
+    <url>https://travis-ci.org/gantsign/inspection-profile-intellij</url>
+  </ciManagement>
+
+  <distributionManagement>
+    <repository>
+      <id>bintray-gantsign-maven</id>
+      <name>gantsign-maven</name>
+      <url>https://dl.bintray.com/gantsign/maven</url>
+    </repository>
+  </distributionManagement>
+
+  <profiles>
+    <profile>
+      <id>publish-artifacts</id>
+
+      <distributionManagement>
+        <repository>
+          <id>bintray-gantsign-maven</id>
+          <name>gantsign-maven</name>
+          <url>https://api.bintray.com/maven/gantsign/maven/inspection-profile-intellij/;publish=1</url>
+        </repository>
+      </distributionManagement>
+    </profile>
+
+    <profile>
+      <id>release</id>
+      <properties>
+        <site.path>release</site.path>
+      </properties>
+    </profile>
+  </profiles>
+
+</project>
