@@ -62,6 +62,7 @@
   <inspection_tool class="CanBePrimaryConstructorProperty" enabled="true" level="ERROR" enabled_by_default="true" />
   <inspection_tool class="CanBeVal" enabled="true" level="ERROR" enabled_by_default="true" />
   <inspection_tool class="CascadeIf" enabled="true" level="ERROR" enabled_by_default="true" />
+  <inspection_tool class="CastCanBeRemovedNarrowingVariableType" enabled="true" level="ERROR" enabled_by_default="true" />
   <inspection_tool class="CastToIncompatibleInterface" enabled="true" level="ERROR" enabled_by_default="true" />
   <inspection_tool class="CatchMayIgnoreException" enabled="true" level="ERROR" enabled_by_default="true" />
   <inspection_tool class="CaughtExceptionImmediatelyRethrown" enabled="true" level="ERROR" enabled_by_default="true" />
@@ -69,6 +70,7 @@
     <option name="insideTryAllowed" value="false" />
   </inspection_tool>
   <inspection_tool class="CharUsedInArithmeticContext" enabled="true" level="WARNING" enabled_by_default="true" />
+  <inspection_tool class="CharsetObjectCanBeUsed" enabled="true" level="ERROR" enabled_by_default="true" />
   <inspection_tool class="ClassInitializer" enabled="true" level="ERROR" enabled_by_default="true" />
   <inspection_tool class="ClassInitializerMayBeStatic" enabled="true" level="ERROR" enabled_by_default="true" />
   <inspection_tool class="ClassName" enabled="true" level="ERROR" enabled_by_default="true">
@@ -203,6 +205,7 @@
   </inspection_tool>
   <inspection_tool class="FinallyBlockCannotCompleteNormally" enabled="true" level="ERROR" enabled_by_default="true" />
   <inspection_tool class="FloatingPointEquality" enabled="true" level="ERROR" enabled_by_default="true" />
+  <inspection_tool class="FoldExpressionIntoStream" enabled="true" level="WARNING" enabled_by_default="true" />
   <inspection_tool class="FoldInitializerAndIfToElvis" enabled="true" level="ERROR" enabled_by_default="true" />
   <inspection_tool class="ForCanBeForeach" enabled="true" level="ERROR" enabled_by_default="true">
     <option name="REPORT_INDEXED_LOOP" value="true" />
@@ -244,6 +247,7 @@
     <option name="insideTryAllowed" value="false" />
   </inspection_tool>
   <inspection_tool class="JUnit4AnnotatedMethodInJUnit3TestCase" enabled="true" level="ERROR" enabled_by_default="true" />
+  <inspection_tool class="JUnit5MalformedNestedClass" enabled="true" level="ERROR" enabled_by_default="true" />
   <inspection_tool class="JUnit5MalformedParameterized" enabled="true" level="ERROR" enabled_by_default="true" />
   <inspection_tool class="JUnit5MalformedRepeated" enabled="true" level="ERROR" enabled_by_default="true" />
   <inspection_tool class="Java8CollectionRemoveIf" enabled="true" level="ERROR" enabled_by_default="true" />
@@ -496,9 +500,11 @@
   <inspection_tool class="RecursivePropertyAccessor" enabled="true" level="ERROR" enabled_by_default="true" />
   <inspection_tool class="RedundantArrayCreation" enabled="true" level="ERROR" enabled_by_default="true" />
   <inspection_tool class="RedundantCast" enabled="true" level="ERROR" enabled_by_default="true" />
+  <inspection_tool class="RedundantClassCall" enabled="true" level="ERROR" enabled_by_default="true" />
   <inspection_tool class="RedundantCollectionOperation" enabled="true" level="ERROR" enabled_by_default="true" />
   <inspection_tool class="RedundantCompanionReference" enabled="true" level="ERROR" enabled_by_default="true" />
   <inspection_tool class="RedundantComparatorComparing" enabled="true" level="ERROR" enabled_by_default="true" />
+  <inspection_tool class="RedundantCompareCall" enabled="true" level="ERROR" enabled_by_default="true" />
   <inspection_tool class="RedundantExplicitClose" enabled="true" level="ERROR" enabled_by_default="true" />
   <inspection_tool class="RedundantExplicitType" enabled="true" level="ERROR" enabled_by_default="true" />
   <inspection_tool class="RedundantFieldInitialization" enabled="true" level="ERROR" enabled_by_default="true" />
@@ -683,4 +689,5 @@
   <inspection_tool class="WhileLoopSpinsOnField" enabled="true" level="ERROR" enabled_by_default="true">
     <option name="ignoreNonEmtpyLoops" value="true" />
   </inspection_tool>
+  <inspection_tool class="WrapperTypeMayBePrimitive" enabled="true" level="ERROR" enabled_by_default="true" />
 </profile>
