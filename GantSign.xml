@@ -14,7 +14,9 @@
   <inspection_tool class="AssertEqualsCalledOnArray" enabled="true" level="ERROR" enabled_by_default="true" />
   <inspection_tool class="AssertEqualsMayBeAssertSame" enabled="true" level="ERROR" enabled_by_default="true" />
   <inspection_tool class="AssertWithSideEffects" enabled="true" level="ERROR" enabled_by_default="true" />
-  <inspection_tool class="AssignmentToNull" enabled="true" level="ERROR" enabled_by_default="true" />
+  <inspection_tool class="AssignmentToNull" enabled="true" level="ERROR" enabled_by_default="true">
+    <option name="ignoreAssignmentsToFields" value="true" />
+  </inspection_tool>
   <inspection_tool class="AtomicFieldUpdaterIssues" enabled="true" level="ERROR" enabled_by_default="true" />
   <inspection_tool class="AtomicFieldUpdaterNotStaticFinal" enabled="true" level="ERROR" enabled_by_default="true" />
   <inspection_tool class="AutoCloseableResource" enabled="true" level="WARNING" enabled_by_default="true" />
