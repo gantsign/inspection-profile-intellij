@@ -463,7 +463,7 @@
     <option name="namePattern" value="([a-z]+[0-9]*)(\.[a-z]+[0-9]*)*" />
   </inspection_tool>
   <inspection_tool class="PackageNamingConvention" enabled="true" level="ERROR" enabled_by_default="true">
-    <option name="m_regex" value="([a-z]+[0-9]*)+" />
+    <option name="m_regex" value="([a-z]+[0-9]*)(\.[a-z]+[0-9]*)*" />
     <option name="m_minLength" value="0" />
     <option name="m_maxLength" value="0" />
   </inspection_tool>
