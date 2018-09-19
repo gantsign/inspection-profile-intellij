@@ -534,6 +534,10 @@
   <inspection_tool class="RedundantVisibilityModifier" enabled="true" level="ERROR" enabled_by_default="true" />
   <inspection_tool class="ReflectionForUnavailableAnnotation" enabled="true" level="ERROR" enabled_by_default="true" />
   <inspection_tool class="Reformat" enabled="true" level="WARNING" enabled_by_default="true" />
+  <inspection_tool class="RegExpDuplicateAlternationBranch" enabled="true" level="ERROR" enabled_by_default="true" />
+  <inspection_tool class="RegExpRedundantEscape" enabled="true" level="ERROR" enabled_by_default="true" />
+  <inspection_tool class="RegExpRepeatedSpace" enabled="true" level="ERROR" enabled_by_default="true" />
+  <inspection_tool class="RegExpSingleCharAlternation" enabled="true" level="ERROR" enabled_by_default="true" />
   <inspection_tool class="RemoveCurlyBracesFromTemplate" enabled="true" level="ERROR" enabled_by_default="true" />
   <inspection_tool class="RemoveEmptyClassBody" enabled="true" level="ERROR" enabled_by_default="true" />
   <inspection_tool class="RemoveEmptyPrimaryConstructor" enabled="true" level="ERROR" enabled_by_default="true" />
