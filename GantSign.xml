@@ -464,8 +464,8 @@
   </inspection_tool>
   <inspection_tool class="PackageNamingConvention" enabled="true" level="ERROR" enabled_by_default="true">
     <option name="m_regex" value="([a-z]+[0-9]*)(\.[a-z]+[0-9]*)*" />
-    <option name="m_minLength" value="0" />
-    <option name="m_maxLength" value="0" />
+    <option name="m_minLength" value="1" />
+    <option name="m_maxLength" value="128" />
   </inspection_tool>
   <inspection_tool class="ParameterNameDiffersFromOverriddenParameter" enabled="true" level="WEAK WARNING" enabled_by_default="true">
     <option name="m_ignoreSingleCharacterNames" value="true" />
