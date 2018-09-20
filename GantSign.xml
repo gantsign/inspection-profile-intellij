@@ -117,6 +117,7 @@
   <inspection_tool class="Convert2Lambda" enabled="true" level="ERROR" enabled_by_default="true" />
   <inspection_tool class="Convert2MethodRef" enabled="true" level="ERROR" enabled_by_default="true" />
   <inspection_tool class="Convert2streamapi" enabled="true" level="WARNING" enabled_by_default="true" />
+  <inspection_tool class="ConvertCallChainIntoSequence" enabled="true" level="ERROR" enabled_by_default="true" />
   <inspection_tool class="ConvertLambdaToReference" enabled="true" level="ERROR" enabled_by_default="true" />
   <inspection_tool class="ConvertSecondaryConstructorToPrimary" enabled="true" level="ERROR" enabled_by_default="true" />
   <inspection_tool class="ConvertToStringTemplate" enabled="true" level="ERROR" enabled_by_default="true" />
